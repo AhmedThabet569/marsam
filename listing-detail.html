@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>City Listing - Directory Template</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--my edit stye-->
+    <link rel="stylesheet" href="assets/css/elmarsam-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <header class="header">
+        <!-- Start Logo -->
+        <div class="logo">
+          <a href="#" class="logo-color-bg">
+            <img alt="" src="assets/images/50947207_2252905091620829_737309120079593472_n.png"/>
+          </a>
+        </div>
+        <!-- End Logo -->
+        <!-- Start User Buttons -->
+        <div class="user-buttons">
+          <a href="#" class="user-login"></a>
+           <a href="additem.html" class="add-listing">إضافة</a>
+        </div>
+        <!-- End User Buttons -->
+        <!-- Start Navbar -->
+        <div class="navbar navbar-inverse" role="navigation" id="slide-nav">
+          
+        </div>
+        <!-- End Navbar -->
+        <!-- Header Search Button -->
+     
+        
+      </header>
+      <!-- End header (topbar) -->
+      <!-- Start Search Popup -->
+      <div class="search-popup container-fluid hero-header">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+            
+          </div>
+      </div>
+      <!-- End Search Popup -->
+      <!-- Start Login/Register Popup -->
+      <div class="login-popup container hero-header">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="panel panel-form">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="#" class="active" id="login-form-link">الدخول </a>
+                  </div>
+                  <div class="col-xs-6">
+                    <a href="#" id="register-form-link">التسجيل</a>
+                  </div>
+                </div>
+                <hr>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form id="login-form" action="#" method="post">
+                      <div class="form-group">
+                        <input type="text" name="username" id="login-username" tabindex="1" class="form-control" placeholder="الاسم" value="">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" id="login-password" tabindex="2" class="form-control" placeholder="كلمة المرور">
+                      </div>
+                      <div class="form-group text-right">
+                        <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                        <label for="remember">تذكرني</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-submit" value="تسجيل الدخول">
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="text-center">
+                              <a href="#" tabindex="5" class="login-forgot-password">هل نسيت كلمة السر؟</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <form id="register-form" action="#" method="post">
+                      <div class="form-group">
+                        <input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="الاسم" value="">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="البريد الالكتروني" value="">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" id="register-password" tabindex="2" class="form-control" placeholder="كلمة السر">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="confirm-password" id="register-confirm-password" tabindex="2" class="form-control" placeholder="تأكيد كلمة السر">
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-submit" value="سجل الان">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Login/Register Popup -->
+      <!-- Start Review Popup -->
+      <div class="review-popup container-fluid hero-header">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+    				<div class="panel panel-form">
+              <div class="panel-heading">
+    						<div class="row">
+    							<div class="col-xs-12">
+    								<h4>انشاء مراجعة علي الاعلان</h4>
+    							</div>
+    						</div>
+    						<hr>
+    					</div>
+    					<div class="panel-body">
+    						<div class="row">
+    							<div class="col-lg-12">
+    								<form id="review-form" class="review-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="review-title" id="review-title" tabindex="1" class="form-control" placeholder="عنوان المراجعة" value="">
+    									</div>
+    									<div class="form-group">
+                        <textarea class="form-control" name="review-message" id="review-message" rows="8" placeholder="اوصف تجربتك"></textarea>
+    									</div>
+                      <div class="form-group">
+                        <div class="star-rating">
+                          <fieldset>
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding">5 نجوم</label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good">4 نجوم</label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">3 نجوم</label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">2 نجوم</label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
+                          </fieldset>
+                        </div>
+                      </div>
+    									<div class="form-group">
+    										<input type="submit" name="review-submit" id="review-submit" tabindex="4" class="form-control btn btn-submit" value="ارسال المراجعة">
+    									</div>
+    								</form>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+        </div>
+      </div>
+      <!-- End Review Popup -->
+      <!-- Start Private Message Popup -->
+      <div class="pm-popup container hero-header">
+        <div class="row">
+    			<div class="col-sm-12 text-center">
+    				<div class="panel panel-form">
+              <div class="panel-heading">
+    						<div class="row">
+    							<div class="col-xs-12">
+    								<h4>رسالة خاصة</h4>
+    							</div>
+    						</div>
+    						<hr>
+    					</div>
+    					<div class="panel-body">
+    						<div class="row">
+    							<div class="col-lg-12">
+                    <!-- Start Contact Form -->
+                    <form method="post" id="pm-form" name="pm-form" class="form-horizontal contact-form pm-form user-form">
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-sm-12 inputGroupContainer">
+                        <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input  name="name" id="name" placeholder="الاسم" class="form-control"  required>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                          <div class="col-sm-12 inputGroupContainer">
+                          <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                              <input name="email" id="email" placeholder="البريد الالكتروني (مطلوب)" class="form-control" required>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                          <div class="col-sm-12 inputGroupContainer">
+                          <div class="input-group">
+                              <textarea name="message" id="message" class="form-control"
+                              placeholder="رسالتك (مطلوب)" required></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-sm-12 inputGroupContainer">
+                        <div class="input-group">
+                            <div class="custom-file mb-3">
+                                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                                <label class="custom-file-label" for="customFile">تحميل ملف او صورة</label>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                      <!-- Submit Button -->
+                      <div class="form-group sub">
+                        <div class="col-sm-12">
+                          <button type="submit" name="name" class="btn btn-warning submit" >ارسال</button>
+
+                        </div>
+                      </div>
+                    </form>
+                    <!-- End Contact Form-->
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+      </div>
+      <!-- End Private Message Popup -->
+      <!-- Start Fixed Quick Menu -->
+      <div class="quick-menu">
+        <a href="#" class="icon-arrow-up hide-menu" title="اخفاء القائمة" data-toggle="tooltip" data-placement="left"></a>
+        <a href="#" class="icon-arrow-down hidden show-menu" title="اظهار القائمة" data-toggle="tooltip" data-placement="left"></a>
+        <a href="#" class="icon-focus gal" title="المعرض" data-toggle="tooltip" data-placement="left"></a>
+        <a href="#" class="icon-copy desc" title="الوصف" data-toggle="tooltip" data-placement="left"></a>
+        <a href="#" class="icon-star rev" title="المراجعات" data-toggle="tooltip" data-placement="left"></a>
+ 
+        <a href="#" class="icon-link rel" title="منتجات ذات صلة" data-toggle="tooltip" data-placement="left"></a>
+        <a href="#" class="icon-envelope pvt" title="رسالة خاصة" data-toggle="tooltip" data-placement="left"></a>
+      </div>
+      <!-- End Fixed Quick Menu -->
+      <!-- Start Fixed Pricing Button -->
+      <a href="#" class="fixed-pricing-button">
+        <div class="ribbon">
+          <div class="pricing-data">
+          50 ريال - 100 ريال
+          </div>
+          <div class="pricing-data-hover">
+            الاتصال بالرسام 
+            
+          </div>
+        </div>
+      </a>
+      <!-- End Fixed Pricing Button -->
+      <!-- Start Listing Title -->
+      <div class="container-fluid listing-title">
+        <div class="breadcrumbs text-left">
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="listing-detail.html">تفاصيل الاعلان</a></li>
+          </ul>
+        </div>
+        <div class="row text-center">
+          <h2>
+            اعلان
+            <a href="#" class="listing-item-rating">4.3</a>
+            <span class="rating-count">(14)</span>
+          </h2>
+        </div>
+        <div class="pg-header-icon icon-focus"></div>
+      </div>
+      <!-- End Listing Title -->
+      <!-- Start Gallery -->
+      <div class="container-fluid gallery" id="gal">
+        <div class="gallery-item">
+          <a href="assets/images/single-listing/1.jpg" data-lightbox="gallery" data-title="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة مايقرأها"></a>
+        </div>
+        <div class="gallery-item">
+          <a href="assets/images/single-listing/2.jpg" data-lightbox="gallery" data-title="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة مايقرأها"></a>
+        </div>
+        <div class="gallery-item">
+          <a href="assets/images/single-listing/3.jpg" data-lightbox="gallery" data-title="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة مايقرأها"></a>
+        </div>
+        <div class="gallery-item">
+          <a href="assets/images/single-listing/4.jpg" data-lightbox="gallery" data-title="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة مايقرأها"></a>
+        </div>
+        <div class="gallery-item">
+          <a href="assets/images/single-listing/5.jpg" data-lightbox="gallery" data-title="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة مايقرأها"></a>
+        </div>
+        <div class="gallery-item">
+          <a href="assets/images/single-listing/6.jpg" data-lightbox="gallery" data-title="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة مايقرأها"></a>
+        </div>
+        <div class="gallery-item">
+          <a href="assets/images/single-listing/7.jpg" data-lightbox="gallery" data-title="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة مايقرأها"></a>
+        </div>
+      </div>
+      <!-- End Gallery -->
+      <!-- Start Listing Description -->
+      <div class="container listing-description" id="desc">
+        <div class="pg-header-icon icon-copy"></div>
+        <div class="row">
+          <div class="col-sm-3 text-center">
+            <div class="listing-avatar">
+              <a class="verified-data" title="Verifyed Listing" data-toggle="tooltip" data-placement="left"></a>
+              <img alt="" src="assets/images/artist/download (3).jpeg" class="center-block" />
+            </div>
+            <div class="claimed text-center">
+              <div class="ribbon">جاسم الكوري</div>
+            </div>
+            <div class="listing-social">
+              <div class="social-networks">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+              </div>
+            </div>
+            <div class="list-data">
+              <div class="list-address">
+               25 شارع جدة 
+              </div>
+            
+                <div class="list-phone">
+                  123 793 644 661
+                </div>
+              
+
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div>
+              <div class="description-container">
+                <table class="description-text table">
+                  <tr>
+                    <td class="description">
+                      <h4 class="listing-subtitle text-right">
+                       احد اشهر الرسامين في التاريخ
+                      </h4>
+                      <p class="capitalize-initial">
+                        
+                      </p>
+                      <p>
+                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.
+                      </p>
+                    </td>
+                   
+                  </tr>
+                </table>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Listing Description -->
+      <!-- Start Review -->
+      <div class="container listing-review" id="rev">
+        <div class="pg-header-icon icon-star"></div>
+        <div class="row">
+          <div class="col-sm-3 text-center">
+            <div class="average-review">
+              <div class="mood-icon icon-happy"></div>
+              <div class="rating">4.3</div>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <div class="review-stats">
+                <div class="review-counter">14</div>
+                <div>المراجعات</div>
+              </div>
+              <img alt="" src="assets/images/miscellaneous/review-background-mask.png" />
+            </div>
+            <div class="review-reputation text-center">
+              <div>
+                <h4>ممتاز</h4>
+              </div>
+            </div>
+            <div class="write-review">
+              <a href="#" class="button">
+                كتابة مراجعة
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <!-- Start Review Author Block -->
+            <div class="row author-block">
+              <div class="col-sm-12 text-right">
+                <a href="#" class="author-avatar pull-right" style="background-image: url(assets/images/users/1.jpg)">
+              
+                </a>
+                <a href="#" class="author-name">علي السيد</a>
+               
+                <div class="author-vote">
+                
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <span class="data icon-calendar-full">05/02/2017</span>
+                <div class="clear"></div>
+                <div class="author-title">
+               ممتاز عمل رائع
+                </div>
+                <div class="author-description">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <!-- End Review Author Block -->
+            <!-- Start Review Author Block -->
+            <div class="row author-block">
+              <div class="col-sm-12 text-right">
+                <a href="#" class="author-avatar pull-right" style="background-image: url(assets/images/users/2.jpg)">
+                 
+                </a>
+                <a href="#" class="author-name">حسن علي</a>
+                 
+                <div class="author-vote">
+                 
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                </div>
+                <span class="data icon-calendar-full">05/02/2017</span>
+                <div class="clear"></div>
+                <div class="author-title">
+                  يحتاج الي اعادة تصميم
+                </div>
+                <div class="author-description">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <!-- End Review Author Block -->
+            <!-- Start Review Author Block -->
+            <div class="row author-block">
+              <div class="col-sm-12 text-right">
+                <a href="#" class="author-avatar pull-right" style="background-image: url(assets/images/users/3.jpg)">
+                  
+                </a>
+                <a href="#" class="author-name">ماجد طاهر</a>
+                 
+                <div class="author-vote">
+                 
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                </div>
+                <span class="data icon-calendar-full">05/02/2017</span>
+                <div class="clear"></div>
+                <div class="author-title">
+                       يحتاج الي الكثير         
+                </div>
+                <div class="author-description">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <!-- End Review Author Block -->
+            <!-- Start Review Author Block -->
+            <div class="row author-block">
+              <div class="col-sm-12 text-right">
+                <a href="#" class="author-avatar pull-right" style="background-image: url(assets/images/users/4.jpg)">
+                   
+                </a>
+                <a href="#" class="author-name">ناصر السيد</a>
+                
+                <div class="author-vote">
+                 
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                </div>
+                <span class="data icon-calendar-full">05/02/2017</span>
+                <div class="clear"></div>
+                <div class="author-title">
+                     غير منتظم
+                </div>
+                <div class="author-description">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+
+            <div class="row author-block">
+              <div class="col-sm-12 text-right">
+                <a href="#" class="author-avatar pull-right" style="background-image: url(assets/images/users/4.jpg)">
+                 
+                </a>
+                <a href="#" class="author-name">ناصر السيد</a>
+               
+                <div class="author-vote">
+             
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                </div>
+                <span class="data icon-calendar-full">05/02/2017</span>
+                <div class="clear"></div>
+                <div class="author-title">
+                   منظم
+                </div>
+                <div class="author-description">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <!-- End Review Author Block -->
+            <!-- Start Review Author Block -->
+            
+            <!-- End Review Author Block -->
+          </div>
+        </div>
+        <div class="more-listing icon-plus" title="المزيد من المراجعات" data-toggle="tooltip" data-placement="top"></div>
+      </div>
+      <!-- End Review -->
+      <!-- Start Map -->
+      <!-- <div class="container-fluid listing-map" id="mp">
+        <div class="pg-header-icon icon-map-marker"></div>
+        <div id="map"></div>
+      </div> -->
+      <!-- End Map -->
+      <!-- Start Related Listings -->
+      <div class="container-fluid listing-block related" id="rel">
+        <div class="pg-header-icon icon-link"></div>
+        <h2>لوحات ذات صلة</h2>
+        <div class="row listing squared">
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-teacup"></a>
+              <div class="listing-item-rating">4.2</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الصرخة
+                    <div class="ribbon">تبدأ من 500 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1045534.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  العشاء الأخير
+                </a>
+                <div class="listing-item-excerpt">
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-library2"></a>
+              <div class="listing-item-rating">4.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الصرخة
+                                        <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-110118.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  الصرخة
+                </a>
+                <div class="listing-item-excerpt">
+                  
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-lotus"></a>
+              <div class="listing-item-rating">4.7</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    مراقبة ليلية
+                    <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1204941.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  مراقبة ليلية
+                </a>
+                <div class="listing-item-excerpt">
+                  
+                </div>
+            
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-glass"></a>
+              <div class="listing-item-rating">3.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الموناليزا
+                    <div class="ribbon">من 200 ريال - 500ريال </div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1384786.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  الموناليزا
+                </a>
+                <div class="listing-item-excerpt">
+                 
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">الموناليزا</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+        </div>
+        <div class="more-listing icon-plus" title="المزيد من اللوحات " data-toggle="tooltip" data-placement="top"></div>
+      </div>
+      <!-- End Related Listing -->
+      <!-- Start Footer -->
+      <footer>
+ 
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- jQuery -->
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- ScrollTo Plugin  -->
+    <script src="assets/lib/jquery-scrollto-master/jquery-scrollto.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapSingleListingMarker.js"></script>
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      $(".navbar").load("page-navbar.html");
+      $("footer").load('footer.html');
+      $(".header-centralizer").load("search.html");
+  </script>
+  </body>
+</html>

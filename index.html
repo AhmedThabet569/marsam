@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>
+      new template
+    </title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet">
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--my edit stye-->
+    <link rel="stylesheet" href="assets/css/elmarsam-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="front-page">
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <header class="header transparent no-shadow">
+        <!-- Start Logo -->
+        <div class="logo white-bg">
+          <a href="#" class="logo-color-bg">
+            <img alt="" src="assets/images/50947207_2252905091620829_737309120079593472_n.png"/>
+          </a>
+        </div>
+        <!-- End Logo -->
+        <!-- Start User Buttons -->
+        <div class="user-buttons">
+          <a href="#" class="user-login"></a>
+
+           <a href="additem.html" class="add-listing">إضافة</a>
+
+        </div>
+        <!-- End User Buttons -->
+        <!-- Start Navbar -->
+             
+        <div class="navbar navbar-inverse" role="navigation" id="slide-nav">
+          <div class="container">
+
+            <div id="slidemenu">
+                 
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="index.html">الرئيسية</a>     </li>
+             
+                <li class="">
+                  <a href="about.html" >من نحن</b></a>
+ 
+                </li>
+                <li class="">
+                    <a href="categories.html">الاقسام</b></a>
+                     
+                  </li>
+                <li class="">
+                  <a href="contact.html">تواصل معنا</b></a>
+                   
+                </li>
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">الصفحات<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="product.html">لوحات القسم </a></li>
+                          <li><a href="painter.html">لوحات الرسام</a></li>
+                          <li><a href="pricing.html">خطة الاسعار</a></li>
+                          <li><a href="listing-detail.html">تفاصيل الاعلان</a></li>
+                           
+                        </ul>
+                      </li>
+                <li class="">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">التسجيل<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="login-register.html">تسجيل دخول/التسجيل</a></li>
+                      <li><a href="forgot-password.html">استعادة كلمة السر</a></li>
+                    </ul>
+                  </li>
+                  
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- End Navbar -->
+      </header>
+      <!-- End header (topbar) -->
+      <!-- Start Login/Register Popup -->
+      <div class="login-popup container hero-header">
+        <div class="row">
+    			<div class="col-sm-12 text-center">
+    				<div class="panel panel-form">
+    					<div class="panel-heading">
+    						<div class="row">
+    							<div class="col-xs-6">
+    								<a href="#" class="active" id="login-form-link">الدخول </a>
+    							</div>
+    							<div class="col-xs-6">
+    								<a href="#" id="register-form-link">التسجيل</a>
+    							</div>
+    						</div>
+    						<hr>
+    					</div>
+    					<div class="panel-body">
+    						<div class="row">
+    							<div class="col-lg-12">
+    								<form id="login-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="login-username" tabindex="1" class="form-control" placeholder="الاسم" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="login-password" tabindex="2" class="form-control" placeholder="كلمة المرور">
+    									</div>
+    									<div class="form-group text-right">
+    										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+    										<label for="remember">تذكرني</label>
+                      </div>
+                          
+    									<div class="form-group">
+    										<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-submit" value="تسجيل الدخول">
+    									</div>
+    									<div class="form-group">
+    										<div class="row">
+    											<div class="col-lg-12">
+    												<div class="text-center">
+    													<a href="#" tabindex="5" class="login-forgot-password">هل نسيت كلمة السر؟</a>
+    												</div>
+    											</div>
+    										</div>
+                      </div>
+                             <!--login by facebook and twitter-->
+                             <div class="form-group social-media-register text-right">
+                                <label for="social-media-register"> التسجيل عن طريق</label>
+                                <a href="www.facebook.com"><i class="fa fa-facebook-square "></i></a>
+                                <a href="www.facebook.com"><i class="fa fa-twitter-square "></i></a>
+                                <a href="www.facebook.com"><i class="fa fa-google-plus-square "></i></a>
+                              </div>
+                              <!--login by facebook and twitter-->
+    								</form>
+    								<form id="register-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="الاسم" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="البريد الالكتروني" value="">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="register-password" tabindex="2" class="form-control" placeholder="كلمة السر">
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="confirm-password" id="register-confirm-password" tabindex="2" class="form-control" placeholder="تأكيد كلمة السر">
+                      </div>
+                               
+    									<div class="form-group">
+    										<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-submit" value="سجل الان">
+                      </div>
+                        <!--login by facebook and twitter-->
+                        <div class="form-group social-media-register text-right">
+                            <label for="social-media-register"> التسجيل عن طريق</label>
+                            <a href="www.facebook.com"><i class="fa fa-facebook-square "></i></a>
+                            <a href="www.facebook.com"><i class="fa fa-twitter-square "></i></a>
+                            <a href="www.facebook.com"><i class="fa fa-google-plus-square "></i></a>
+                          </div>
+                          <!--login by facebook and twitter-->
+    								</form>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+      </div>
+      <!-- End Login/Register Popup -->
+      <!-- Start Hero Header -->
+      <div class="container-fluid hero-header h-video transparent">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+          
+        </div>
+      </div>
+      <!-- Ends Hero Header -->
+      <div class="container-fluid front-categories vertical best-categoery">
+          <div class="row row-title">
+            <h1>أفضل الأقسام المميزة </h1>
+            <h4>نقدم لكم أفضل الاقسام التي لدينا </h4>
+          </div>
+          <div class="row cat-itens">
+            <div class="cat-item">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/maxresdefault.jpg')"></div>
+              <div class="cat-icon">
+                  <img src="assets/images/icons/1.png" class="categouriiess">
+                </div>
+              <div class="cat-counter">34</div>
+              <a href="#">
+                 
+                <div class="cat-text">الوان مائية</div>
+              </a>
+            </div>
+            <div class="cat-item">
+              <div class="cat-overlay"></div>
+              <div class="cat-image" style="background-image:url('assets/images/nRTZ9MxJ.jpg')"></div>
+              <div class="cat-icon ">
+                  <img src="assets/images/icons/2.png" class="categouriiess">
+              </div>
+              <div class="cat-counter">7</div>
+              <a href="#">
+                <div class="cat-text">دارك ارت</div>
+              </a>
+            </div>
+            <div class="cat-item">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/hqdefault.jpg')"></div>
+              <div class="cat-icon">
+                  <img src="assets/images/icons/3.png" class="categouriiess">
+              </div>
+              <div class="cat-counter">47</div>
+              <a href="#">
+                <div class="cat-text">ديجيتال ارت</div>
+              </a>
+            </div>
+            <div class="cat-item">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/424.jpeg')"></div>
+              <div class="cat-icon">
+                  <img src="assets/images/icons/4.png" class="categouriiess">
+              </div>
+              <div class="cat-counter">29</div>
+              <a href="#">
+                <div class="cat-text">طبيعة</div>
+              </a>
+            </div>
+            <div class="cat-item">
+              <div class="cat-overlay"></div>
+              <div  class="cat-image" style="background-image:url('assets/images/420933702_fb84daac07.jpg')"></div>
+              <div class="cat-icon">
+                  <img src="assets/images/icons/5.png" class="categouriiess">
+              </div>
+              <div class="cat-counter">92</div>
+              <a href="#">
+                <div class="cat-text">طفولة</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row cat-itens">
+              <div class="cat-item">
+                <div class="cat-overlay"></div>
+                <div  class="cat-image" style="background-image:url('assets/images/1417975685_7a51df8603_o.jpg')"></div>
+                <div class="cat-icon ">
+                    <img src="assets/images/icons/7.png" class="categouriiess">
+                  </div>
+                <div class="cat-counter">34</div>
+                <a href="#">
+                   
+                  <div class="cat-text">عصري</div>
+                </a>
+              </div>
+              <div class="cat-item">
+                <div class="cat-overlay"></div>
+                <div class="cat-image" style="background-image:url('assets/images/graden.jpeg')"></div>
+                <div class="cat-icon ">
+                    <img src="assets/images/icons/8.png" class="categouriiess">
+                </div>
+                <div class="cat-counter">7</div>
+                <a href="#">
+                  <div class="cat-text">فن تجريدي</div>
+                </a>
+              </div>
+              <div class="cat-item">
+                <div class="cat-overlay"></div>
+                <div  class="cat-image" style="background-image:url('assets/images/categories/3.jpg')"></div>
+                <div class="cat-icon">
+                    <img src="assets/images/icons/10.png" class="categouriiess">
+                </div>
+                <div class="cat-counter">47</div>
+                <a href="#">
+                  <div class="cat-text">لحظات</div>
+                </a>
+              </div>
+              <div class="cat-item">
+                <div class="cat-overlay"></div>
+                <div  class="cat-image" style="background-image:url('assets/images/1022425082.jpg')"></div>
+                <div class="cat-icon">
+                    <img src="assets/images/icons/9.png" class="categouriiess">
+                </div>
+                <div class="cat-counter">29</div>
+                <a href="#">
+                  <div class="cat-text">كاجول </div>
+                </a>
+              </div>
+
+              <div class="cat-item">
+                  <div class="cat-overlay"></div>
+                  <div  class="cat-image" style="background-image:url('assets/images/112668764_229.jpg')"></div>
+                  <div class="cat-icon">
+                      <img src="assets/images/icons/9.png" class="categouriiess">
+                  </div>
+                  <div class="cat-counter">29</div>
+                  <a href="#">
+                    <div class="cat-text">كاجول </div>
+                  </a>
+                </div>
+             
+            </div>
+        </div>
+      <!-- Start Front Categories -->
+      <div class="container-fluid front-categories leaf">
+        <div class="row row-title">
+          <h1>أفضل الرسامين </h1>
+          <h4>أهم الرسامين واعمالهم المميزة
+          </h4>
+        </div>
+        <div class="row cat-itens">
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download.jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">34</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div class="cat-image" style="background-image:url('assets/images/artist/download (1).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">7</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (2).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">47</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (3).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">11</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (4).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">61</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (5).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">29</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (6).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">123</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (7).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">53</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (8).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">166</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+          <div class="cat-item">
+            <div class="cat-overlay"></div>
+            <div  class="cat-image" style="background-image:url('assets/images/artist/download (8).jpeg')"></div>
+            <div class="cat-icon icon-brush"></div>
+            <div class="cat-counter">92</div>
+            <a href="#">
+              <div class="cat-text">جاسم الكوري</div>
+            </a>
+          </div>
+        </div>
+      
+      </div>
+      <!-- End Front Categories -->
+    
+      <!-- Start Trending -->
+      <div class="container-fluid trending">
+        <div class="row row-title">
+          <h1>أحدث العروض</h1>
+          <!-- <h4>
+          </h4> -->
+        </div>
+        <div class="row listing squared">
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-teacup"></a>
+              <div class="listing-item-rating">4.2</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الصرخة
+                    <div class="ribbon">تبدأ من 500 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1045534.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  العشاء الأخير
+                </a>
+                <div class="listing-item-excerpt">
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-library2"></a>
+              <div class="listing-item-rating">4.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الصرخة
+                                        <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-110118.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  الصرخة
+                </a>
+                <div class="listing-item-excerpt">
+                  
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-lotus"></a>
+              <div class="listing-item-rating">4.7</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    مراقبة ليلية
+                    <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1204941.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  مراقبة ليلية
+          
+                </a>
+                <div class="listing-item-excerpt">
+                 
+                </div>
+            
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-glass"></a>
+              <div class="listing-item-rating">3.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الموناليزا
+                    <div class="ribbon">من 200 ريال - 500ريال </div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1384786.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  الموناليزا
+                </a>
+                <div class="listing-item-excerpt">
+                 
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">الموناليزا</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+        </div>
+
+        <div class="row listing squared">
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-teacup"></a>
+              <div class="listing-item-rating">4.2</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    إصرار الذاكرة
+                    <div class="ribbon">تبدأ من 500 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1573820.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  إصرار الذاكرة
+                </a>
+                <div class="listing-item-excerpt">
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-library2"></a>
+              <div class="listing-item-rating">4.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الفتاة ذات القرط اللؤلؤي
+                    <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-1919287.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  الفتاة ذات القرط اللؤلؤي
+                </a>
+                <div class="listing-item-excerpt">
+                  
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-lotus"></a>
+              <div class="listing-item-rating">4.7</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    مراقبة ليلية
+                    <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-207856.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  مراقبة ليلية
+                </a>
+                <div class="listing-item-excerpt">
+                 
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-glass"></a>
+              <div class="listing-item-rating">3.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    غرنيكا
+                    <div class="ribbon">من 200 ريال - 500ريال </div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-356860.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  غرنيكا
+                </a>
+                <div class="listing-item-excerpt">
+                 
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">عمل فني</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+        </div>
+
+        <div class="row listing squared">
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-teacup"></a>
+              <div class="listing-item-rating">4.2</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    يوتا
+                    <div class="ribbon">تبدأ من 500 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-415983.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  يوتا                </a>
+                <div class="listing-item-excerpt">
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-library2"></a>
+              <div class="listing-item-rating">4.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    ليلة مليئة بالنجوم
+                                        <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-686230.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  ليلة مليئة بالنجوم
+                </a>
+                <div class="listing-item-excerpt">
+                  
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-lotus"></a>
+              <div class="listing-item-rating">4.7</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    مراقبة ليلية
+                    <div class="ribbon">سعر مناسب 300 ريال</div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-691030.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  مراقبة ليلية
+                </a>
+                <div class="listing-item-excerpt">
+                 
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+          <!-- Start Trending Item Col -->
+          <div class="col-sm-3">
+            <div class="listing-item">
+              <a href="#" class="category-icon icon-glass"></a>
+              <div class="listing-item-rating">3.9</div>
+              <a href="#" class="listing-item-link">
+                <div class="listing-item-title-centralizer">
+                  <div class="listing-item-title">
+                    الصرخة
+                    <div class="ribbon">من 200 ريال - 500ريال </div>
+                  </div>
+                </div>
+                <img alt="" src="assets/images/painting/pexels-photo-959314.jpeg" />
+              </a>
+              <div class="listing-item-data">
+                <a class="listing-item-address" href="#">
+                  الصرخة
+                </a>
+                <div class="listing-item-excerpt">
+                 
+                </div>
+              </div>
+              <div class="listing-category-name">
+                <a href="#">لوحة فنية</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Trending Item Col -->
+        </div>
+
+        
+      </div>
+      <!-- End Trending -->
+      <!-- Start How It Works -->
+      <div class="container-fluid how color-bg">
+        <div class="row row-title">
+          <h1>كيف تحصل علي لوحتك المفضلة</h1>
+          <h4>عن طريق اتباع تلك الوسائل
+          </h4>
+        </div>
+        <div class="row how-items">
+          <!-- Start How Item Col -->
+          <div class="col-sm-3">
+            <div class="how-item">
+              <a href="#">
+                <img alt="" src="assets/images/miscellaneous/icon-1.png" />
+                <h3 class="how-item-title">المواعيد</h3>
+                <div class="how-item-excerpt">
+                  نشر قائمة لإظهار للجميع ما هي الأشياء الجيدة في مؤسستك. أضف وسائل الراحة والعلامات للترويج لكل التفاصيل في قائمتك.
+
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End How Item Col -->
+          <!-- Start How Item Col -->
+          <div class="col-sm-3">
+            <div class="how-item">
+              <a href="#">
+                <img alt="" src="assets/images/miscellaneous/icon-2.png" />
+                <h3 class="how-item-title">المستهلكين
+                </h3>
+                <div class="how-item-excerpt">
+                  بسهولة العثور على الأماكن المثيرة للاهتمام اختارها الخبراء المحليين. وفر وقتك من خلال تنظيم رحلتك عبر الإنترنت ، ولا تفوت أي نقطة.
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End How Item Col -->
+          <!-- Start How Item Col -->
+          <div class="col-sm-3">
+            <div class="how-item">
+              <a href="#">
+                <img alt="" src="assets/images/miscellaneous/icon-3.png" />
+                <h3 class="how-item-title">الجميع</h3>
+                <div class="how-item-excerpt">
+                  بسهولة العثور على الأماكن المثيرة للاهتمام اختارها الخبراء المحليين. وفر وقتك من خلال تنظيم رحلتك عبر الإنترنت ، ولا تفوت أي نقطة.
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End How Item Col -->
+          <!-- Start How Item Col -->
+          <div class="col-sm-3">
+            <div class="how-item">
+              <a href="#">
+                <img alt="" src="assets/images/miscellaneous/icon-4.png" />
+                <h3 class="how-item-title">مجاني وخاص</h3>
+                <div class="how-item-excerpt">
+                  بسهولة العثور على الأماكن المثيرة للاهتمام اختارها الخبراء المحليين. وفر وقتك من خلال تنظيم رحلتك عبر الإنترنت ، ولا تفوت أي نقطة.
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End How Item Col -->
+        </div>
+      </div>
+      <!-- End How It Works -->
+      <!-- Start App -->
+      <div class="container-fluid app appcontainerbaner">
+        <div class="row row-title">
+          <h1>حمل تطبيقنا</h1>
+          <h4>جميع القوائم في متناول يدك
+          </h4>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="app-version">
+            النسخة المبدائية
+            </div>
+            <div class="app-img">
+              <img alt="" src="assets/images/miscellaneous/mobile-cut-laguna-green.png"/>
+            </div>
+            <div class="app-links">
+              <a href="#">
+                <img alt="" src="assets/images/miscellaneous/g-play.png" />
+              </a>
+              <a href="#">
+                <img alt="" src="assets/images/miscellaneous/app-st.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End App -->
+      <!-- Start Blog Section -->
+     
+      <!-- End Blog Section -->
+      <!-- Start Footer -->
+      <footer>
+        
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- Vimeo Hero Video Background -->
+    <script>
+      var vm_video = "141274767";
+    </script>
+    <!-- jQuery -->
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapSingleListingMarker.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+
+        $("footer").load('footer.html');
+        $(".header-centralizer").load("search.html");
+		
+    </script>
+  </body>
+</html>

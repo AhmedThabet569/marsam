@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>City Listing - Directory Template</title>
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Roboto" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet">
+
+    <!-- Awesome Icons Font -->
+    <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Listing Filter -->
+    <link href="assets/lib/bootstrap-select-master/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lib/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Map -->
+    <link href="assets/lib/Leaflet-1.0.2/dist/leaflet.css" rel="stylesheet">
+    <!-- City Listing Icons -->
+    <link href="assets/fonts/icons/css/import-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/elmarsam-style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv-master/dist/html5shiv.min.js"></script>
+      <script src="assets/lib/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start Body Content Wrapper -->
+    <div class="body-wrapper">
+      <!-- Start header (topbar) -->
+      <header class="header">
+        <!-- Start Logo -->
+        <div class="logo">
+            <a href="#" class="logo-color-bg">
+              <img alt="" src="assets/images/50947207_2252905091620829_737309120079593472_n.png"/>
+            </a>
+          </div>
+        <!-- End Logo -->
+        <!-- Start User Buttons -->
+        <div class="user-buttons">
+            <a href="#" class="user-login"></a>
+              <a href="additem.html" class="add-listing">إضافة</a>
+          </div>
+        <!-- End User Buttons -->
+        <!-- Start Navbar -->
+        <div class="navbar navbar-inverse" role="navigation" id="slide-nav">
+          
+          </div>
+        <!-- End Navbar -->
+        <!-- Header Search Button -->
+         
+      </header>
+      <!-- End header (topbar) -->
+      <!-- Start Search Popup -->
+      <div class="search-popup container-fluid hero-header">
+        <!-- Start Header Centralizer -->
+        <div class="header-centralizer">
+            
+          </div>
+      </div>
+      <!-- End Search Popup -->
+      <!-- Start Login/Register Popup -->
+      <div class="login-popup container hero-header">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div class="panel panel-form">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="#" class="active" id="login-form-link">الدخول </a>
+                    </div>
+                    <div class="col-xs-6">
+                      <a href="#" id="register-form-link">التسجيل</a>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <form id="login-form" action="#" method="post">
+                        <div class="form-group">
+                          <input type="text" name="username" id="login-username" tabindex="1" class="form-control" placeholder="الاسم" value="">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" name="password" id="login-password" tabindex="2" class="form-control" placeholder="كلمة المرور">
+                        </div>
+                        <div class="form-group text-center">
+                          <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                          <label for="remember">تذكرني</label>
+                        </div>
+                        <div class="form-group">
+                          <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-submit" value="تسجيل الدخول">
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="text-center">
+                                <a href="#" tabindex="5" class="login-forgot-password">هل نسيت كلمة السر؟</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <form id="register-form" action="#" method="post">
+                        <div class="form-group">
+                          <input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="الاسم" value="">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="البريد الالكتروني" value="">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" name="password" id="register-password" tabindex="2" class="form-control" placeholder="كلمة السر">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" name="confirm-password" id="register-confirm-password" tabindex="2" class="form-control" placeholder="تأكيد كلمة السر">
+                        </div>
+                        <div class="form-group">
+                          <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-submit" value="سجل الان">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- End Login/Register Popup -->
+      <!-- Start Page Header -->
+      <div class="container-fluid pg-header" style="background-image: url(assets/images/backgrounds/bannerArt.jpg);">
+        <div class="breadcrumbs text-left">
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+         
+            <li><a href="category.html">الاقسام</a></li>
+          </ul>
+        </div>
+        <div class="pg-header-content">
+          <h1 class="pg-title">
+            الاقسام
+          </h1>
+          <h4 class="pg-subtitle">
+            
+          </h4>
+        </div>
+        <div class="pg-header-icon  icon-brush"></div>
+      </div>
+      <!-- End Page Header -->
+      <!-- Start Page Intro -->
+      <div class="container page-intro">
+        اهم الاقسام التي لدينا      </div>
+      <!-- End Page Intro -->
+      <!-- Start City Listing -->
+      <div class="container-fluid pg-content cities leaf text-center">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-110118.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                    النحت
+                  </div>
+                  <div class="ribbon">17 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-1204941.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                    الرسوم المعمارية
+                  </div>
+                  <div class="ribbon">63 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-1573820.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                    اللوحات الكرتونية
+                  </div>
+                  <div class="ribbon">28 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-1919287.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                    النقش علي الجدران
+                  </div>
+                  <div class="ribbon">19 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-207856.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                    رسم تجريدي
+                  </div>
+                  <div class="ribbon">41 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-356860.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                 لوحات تاريخية
+                  </div>
+                  <div class="ribbon">112 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-415983.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                    الفن التشكيلي
+                  </div>
+                  <div class="ribbon">22 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" style="background-image:url(assets/images/painting/pexels-photo-686230.jpeg)">
+              <div class="city-data">
+                <div class="centralizer">
+                  <div class="city-name">
+                    لوحات منحوتة
+                  </div>
+                  <div class="ribbon">69 عمل</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End City Listing -->
+      <!-- Start Footer -->
+      <footer>
+          
+        </footer>
+      <!-- End Footer -->
+    </div>
+    <!-- End Body Content Wrapper -->
+    <!-- jQuery -->
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/lib/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <!-- Typing Effect -->
+    <script src="assets/lib/typed.js-master/dist/typed.min.js"></script>
+    <!-- Dragging Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery.dragscroll.js"></script>
+    <!-- Horizontal Mousewheel Scroll to Listing Gallery -->
+    <script src="assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <!-- Listing Filter -->
+    <script src="assets/lib/bootstrap-select-master/js/bootstrap-select.js"></script>
+    <!-- To Self Hosted Hero Video -->
+    <script src="assets/lib/bideo.js-master/bideo.js"></script>
+    <!-- Map -->
+    <script src="assets/lib/Leaflet-1.0.2/build/deps.js"></script>
+  	<script src="assets/lib/Leaflet-1.0.2/debug/leaflet-include.js"></script>
+    <script src="assets/js/map-markers-samples/sampleMapSingleListingMarker.js"></script>
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $(".navbar").load("page-navbar.html");
+        $("footer").load('footer.html');
+        $(".header-centralizer").load("search.html");
+    </script>
+  </body>
+</html>

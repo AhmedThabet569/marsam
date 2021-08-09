@@ -1,0 +1,9 @@
+@media(max-width:767px){
+    .data:before{
+
+    }
+    .pg-header-icon {
+       position: absolute;
+        top: -71px !important;
+    }
+}
